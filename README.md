@@ -4,12 +4,20 @@
 
 **유튜버 영상에서 찾고, 방문 반응으로 고르는 맛집 가이드**
 
+🌐 **배포 서비스 바로가기:** [https://lesulin-guide.vercel.app](https://lesulin-guide.vercel.app)  
+🗺️ **지도 탐색:** [https://lesulin-guide.vercel.app/map.html](https://lesulin-guide.vercel.app/map.html) · 📍 **상세 예시(나진국밥):** [https://lesulin-guide.vercel.app/map.html?store=s49](https://lesulin-guide.vercel.app/map.html?store=s49)
+
+<br/>
+
 [![Live Service](https://img.shields.io/badge/Live_Demo-lesulin--guide.vercel.app-FB5C01?style=for-the-badge&logo=vercel&logoColor=white)](https://lesulin-guide.vercel.app)
-[![Next.js](https://img.shields.io/badge/Next.js-API_%26_Admin-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Claude API](https://img.shields.io/badge/Anthropic-Claude_API-191919?style=for-the-badge&logo=anthropic&logoColor=white)](https://www.anthropic.com/)
-[![Kakao Maps](https://img.shields.io/badge/Kakao_Maps-SDK_%26_Local_API-FFCD00?style=for-the-badge&logo=kakao&logoColor=black)](https://apis.map.kakao.com/)
-[![Python](https://img.shields.io/badge/Python-DuckDB_%C2%B7_Pandas-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://duckdb.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)](https://developer.mozilla.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://www.anthropic.com/)
+[![Kakao Maps](https://img.shields.io/badge/Kakao_Maps_SDK-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=191919)](https://apis.map.kakao.com/)
+[![YouTube Data API](https://img.shields.io/badge/YouTube_Data_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://developers.google.com/youtube/v3)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=111111)](https://duckdb.org/)
 
 *캡스톤디자인 4조 프로젝트 · 2026.10 ~ 2026.11*
 
@@ -50,19 +58,28 @@
 
 ## 2. 프로젝트 실행 화면
 
+> 🔗 **실제 동작 웹 서비스:** [https://lesulin-guide.vercel.app](https://lesulin-guide.vercel.app)
+
 ### ① 시작(인트로) 화면 — 가이드북 온보딩 & 3열 실시간 프리뷰
+> 🔗 [https://lesulin-guide.vercel.app/](https://lesulin-guide.vercel.app/)  
 > **"좋아하는 유튜버가 간 식당, 직접 다녀온 사람들의 반응은?"**  
 > 서비스 접속 직후 3초 안에 핵심 가치를 전달하도록 설계했습니다. 최대 10명의 유튜버를 선택할 수 있으며, 하단 3열 프리뷰(`유튜버가 소개한 식당` · `다녀온 사람들 이야기` · `미니 지도`)를 통해 실제 영상과 원문 댓글이 연결되는 구조를 바로 체험할 수 있습니다.
 
 ![르슐랭 가이드 시작 화면](docs/screenshots/01_intro.png)
 
 ### ② 지도 기반 탐색 화면 — 클러스터 핀 · 랭킹 · 실시간 커뮤니티
-> **한 화면에서 끝나는 탐색 동선**  
-> 좌측에서 업종 카테고리(`패스트푸드`, `찜·탕`, `치킨` 등), 유튜버(`내 유튜버 고르기`), 최근 영상, `실시간 인기글`과 상세 필터(조회수·방문 반응 수·줄 서는 집·반응이 있는 곳)를 조작하면 중앙 카카오맵과 우측 랭킹 목록이 즉시 동기화됩니다. 내가 고른 유튜버의 식당 핀에는 **주황 테두리와 우선 프로필**이 표시됩니다.
+> 🔗 [https://lesulin-guide.vercel.app/map.html](https://lesulin-guide.vercel.app/map.html)  
+> **한 화면에서 끝나는 탐색 & 실시간 커뮤니티 동선**  
+> 좌측에서 업종 카테고리(`패스트푸드`, `찜·탕`, `치킨` 등), 유튜버(`내 유튜버 고르기`), 최근 영상, `실시간 인기글`과 상세 필터(조회수·방문 반응 수·줄 서는 집·반응이 있는 곳)를 조작하면 중앙 카카오맵과 우측 랭킹 목록이 즉시 동기화됩니다. 우측 상단 **커뮤니티** 버튼을 누르면 지도 위에서 바로 지역 질문·추천·답글·검색이 가능한 **실시간 익명 커뮤니티** 창이 열립니다.
 
+#### ▸ 전체 지도 · 랭킹 탐색 뷰
 ![르슐랭 가이드 지도 탐색 화면](docs/screenshots/02_map.png)
 
+#### ▸ 실시간 커뮤니티 열린 화면 (인기순 · 최신순 · 검색 · 글쓰기 · 답글)
+![르슐랭 가이드 실시간 커뮤니티 열린 화면](docs/screenshots/02_map_community.png)
+
 ### ③ 식당 상세 & 방문 후기 요약 AI — 근거 원문까지 한눈에
+> 🔗 [https://lesulin-guide.vercel.app/map.html?store=s49](https://lesulin-guide.vercel.app/map.html?store=s49)  
 > **결과를 말하기 전에 근거를 먼저 보여줍니다**  
 > 우측 상세 패널에서는 **원본 유튜브 영상 썸네일** → **르슐랭 점수(95점) · 배지(이곳을 위해)** → **방문 후기 요약 AI 3줄(`좋았다는 점` · `아쉬웠다는 점` · `가기 전에`)** → **항목별 긍정/부정 막대** → **카카오맵 길찾기** 및 **`이 가게 물어보기`(커뮤니티 연동)**로 이어집니다. 요약 문장을 클릭하면 근거가 된 실제 유튜브 댓글 원문이 펼쳐집니다.
 
@@ -144,7 +161,25 @@ flowchart TB
 
 ## 5. 사용된 기술 스택 및 스킬 (Tech Stack & Skills)
 
-### 🛠️ 기술 스택
+### 🛠️ 기술 스택 뱃지
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude API"/>
+  <img src="https://img.shields.io/badge/YouTube_Data_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Data API"/>
+  <img src="https://img.shields.io/badge/Kakao_Maps_SDK-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=191919" alt="Kakao Maps SDK"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=111111" alt="DuckDB"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"/>
+</p>
+
 | 구분 | 사용 기술 | 적용 영역 |
 | :--- | :--- | :--- |
 | **Frontend** | HTML5, CSS3, Vanilla JS (`start.js`, `app.js`), Next.js | 가이드북 인트로, 지도/목록 분할 탐색, 드래그 리사이즈 패널, 상세 뷰, 커뮤니티 모달 |
@@ -154,6 +189,13 @@ flowchart TB
 | **Data & Verification** | Python, DuckDB, Pandas, `python-pptx`, Pillow | 1,490만 건 대용량 CSV 고속 프로파일링, F1 평가(`04_compare.py`), 슬라이드 넘침 자동 검수(`build_lesulin.py`) |
 
 ### 🤖 AI 에이전트 스킬 및 개발 워크플로우
+<p>
+  <img src="https://img.shields.io/badge/Claude_Code-Agent_Workflow-191919?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code"/>
+  <img src="https://img.shields.io/badge/frontend--design-UI%2FUX_Skill-FB5C01?style=for-the-badge&logo=anthropic&logoColor=white" alt="frontend-design"/>
+  <img src="https://img.shields.io/badge/Web_QA-Auto_Verification-12705C?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Web QA"/>
+  <img src="https://img.shields.io/badge/Figma_Plugin-Design_Sync-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma Plugin"/>
+</p>
+
 - **`frontend-design` 스킬**: 인트로 화면의 3초 인지성 개선과 서비스 톤앤매너(오렌지/크림/화이트 가이드북 컨셉) 설계·구현에 활용
 - **웹 UI · 기능 자동 검수 스킬**: 배포 직전 버튼 동작, 필터 상태 동기화(`?yt=` 파라미터), 썸네일/파비콘 렌더링, 반응형 레이아웃 오류 전수 점검
 - **Figma 플러그인 & 인터랙티브 HTML 목업(`web/mockup.html`)**: 화면 설계안 비교(A/B/C안) 및 프론트엔드 구현 연결
